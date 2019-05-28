@@ -1,15 +1,6 @@
 
 02.JavaScript Language Fundamentals
-** .Log to console
 *006. Variables - var let const 
-	/*02.JavaScript Language Fundamentals
-** .Log to console
-*006. Variables - var let const 
-*007. Data type in javaScript 
-*008. Type Conversion
-*009. Numbers The Math Object
-
-
 *007. Data type in javaScript 
 *008. Type Conversion
 *009. Numbers The Math Object
