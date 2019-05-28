@@ -1,4 +1,5 @@
 // 2.2 start
+//005 Using The Console
 // Log to console
 console.log('Hello World');
 console.log(123);
@@ -28,6 +29,7 @@ console.timeEnd('Hello');
 
 // 2.2 end
 //2.3 start
+//006 Variables - var let  const
 // var, let, const
 
 // var name = 'John Doe';
@@ -84,6 +86,7 @@ const person = {
   //2.3 End
 
   //2.4 start
+//007 Data Types in JavaScript
   // PRIMITIVE
 
 // String
@@ -113,6 +116,7 @@ console.log(typeof today);
 
 //2.4 End
 // 2.5 start
+//008 Type Conversion
 let val;
 
 // Number to string
@@ -155,6 +159,7 @@ console.log(typeof sum);
 
 //2.5 End
 //2.6 Start
+//009 Numbers  The Math Object
 const num1 = 100;
 const num2 = 50;
 let val;
@@ -184,6 +189,7 @@ val = Math.floor(Math.random() * 20 + 1);
 console.log(val);
 //2.6 End
 //2.7 Start
+//010 String Methods  Concatenation
 const firstName = 'William';
 const lastName = 'Johnson';
 const age = 36;
@@ -248,6 +254,7 @@ console.log(val);
 
 //2.7 End
 //2.8 Start
+//011 Template Literals
 const name = 'John';
 const age = 31;
 const job = 'Web Developer';
@@ -285,6 +292,7 @@ document.body.innerHTML = html;
 
 //2.8 END
 //2.9 Start
+//012 Arrays  Array Methods
 // Create some arrays
 const numbers = [43,56,33,23,44,36,5];
 const numbers2 = new Array(22,45,33,76,54);
@@ -348,6 +356,7 @@ console.log(val);
 
 //2.9 End
 //2.10 Start
+//013 Object Literals
 const person = {
     firstName: 'Steve',
     lastName: 'Smith',
@@ -388,7 +397,11 @@ const person = {
   }
 
   //2.10 End
+
+
+
   //2.11 Start
+//014 Dates  Times
   let val;
 
 const today = new Date();
@@ -415,7 +428,10 @@ birthday.setSeconds(25);
 
 console.log(birthday);
 //2.11 ENd
+
+
 //2.12 Start
+//015 If Statements  Comparison Operators
 // if(something){
 //   do something
 // } else {
@@ -514,7 +530,12 @@ else
   console.log('INCORRECT');
 
   //2.12 END
+
+
+
+
   //2.13 Start
+//016 Switches
   const color = 'yellow';
 
 switch(color){
@@ -558,9 +579,13 @@ switch(new Date().getDay()){
 console.log(`Today is ${day}`);
 
 //2.13 END 
+
+
+
+
 //2.14 Start
 // FUNCTION DECLARATIONS
-
+//017 Function Declarations  Expressions
 function greet(firstName = 'John', lastName = 'Doe'){
     // if(typeof firstName === 'undefined'){firstName = 'John'}
     // if(typeof lastName === 'undefined'){lastName = 'Doe'}
@@ -607,7 +632,11 @@ function greet(firstName = 'John', lastName = 'Doe'){
   todo.edit(22);
   todo.delete();
 //2.14 END
+
+
+
 //2.15 Start
+//018 General Loops
   // FOR LOOP
 
 // for(let i = 0; i < 10; i++){
@@ -683,7 +712,12 @@ for(let x in user){
   console.log(`${x} : ${user[x]}`);
 }
 //2.15 END
+
+
+
+
 //2.16 Start
+//019 A Look At The Window Object
 // WINDOW METHODS / OBJECTS / PROPERTIES
 
 // Alert
@@ -744,7 +778,11 @@ val = window.navigator.language;
 
 console.log(val);
 //2.16 END
+
+
+
 //2.17 Start
+//020 Block Scope With let  const
 // Global Scope
 var a = 1;
 let b = 2;
