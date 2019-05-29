@@ -47,28 +47,28 @@ console.log(val);
 
 
 //023 DOM Selectors For Single Elements
-// document.getElementById()
+document.getElementById()
 
-// console.log(document.getElementById('task-title'));
+console.log(document.getElementById('task-title'));
 
-// // Get things from the element
-// console.log(document.getElementById('task-title').id);
-// console.log(document.getElementById('task-title').className);
+// Get things from the element
+console.log(document.getElementById('task-title').id);
+console.log(document.getElementById('task-title').className);
 
-// const taskTitle = document.getElementById('task-title');
+const taskTitle = document.getElementById('task-title');
 
-// // Change styling
-// taskTitle.style.background = '#333';
-// taskTitle.style.color = '#fff';
-// taskTitle.style.padding = '5px';
-// // taskTitle.style.display = 'none';
+// Change styling
+taskTitle.style.background = '#333';
+taskTitle.style.color = '#fff';
+taskTitle.style.padding = '5px';
+// taskTitle.style.display = 'none';
 
-// // Change content
-// taskTitle.textContent = 'Task List';
-// taskTitle.innerText = 'My Tasks';
-// taskTitle.innerHTML = '<span style="color:red">Task List</span>';
+// Change content
+taskTitle.textContent = 'Task List';
+taskTitle.innerText = 'My Tasks';
+taskTitle.innerHTML = '<span style="color:red">Task List</span>';
 
-// document.querySelector()
+document.querySelector()
 
 console.log(document.querySelector('#task-title'));
 console.log(document.querySelector('.card-title'));
@@ -91,36 +91,36 @@ document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
 
 
 //024 DOM Selectors For Multiple Elements
-// document.getElementsByClassName
+document.getElementsByClassName
 
-// const items = document.getElementsByClassName('collection-item');
-// console.log(items);
-// console.log(items[0]);
-// items[0].style.color = 'red';
-// items[3].textContent = 'Hello';
+const items = document.getElementsByClassName('collection-item');
+console.log(items);
+console.log(items[0]);
+items[0].style.color = 'red';
+items[3].textContent = 'Hello';
 
-// const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
 
-// console.log(listItems);
+console.log(listItems);
 
-// document.getElementsByTagName
-// let lis = document.getElementsByTagName('li');
-// console.log(lis);
-// console.log(lis[0]);
-// lis[0].style.color = 'red';
-// lis[3].textContent = 'Hello';
+document.getElementsByTagName
+let lis = document.getElementsByTagName('li');
+console.log(lis);
+console.log(lis[0]);
+lis[0].style.color = 'red';
+lis[3].textContent = 'Hello';
 
 // // Conver HTML Collection into array
-// lis = Array.from(lis);
+lis = Array.from(lis);
 
-// lis.reverse();
+lis.reverse();
 
-// lis.forEach(function(li, index){
-//   console.log(li.className);
-//   li.textContent = `${index}: Hello`;
-// });
+lis.forEach(function(li, index){
+  console.log(li.className);
+  li.textContent = `${index}: Hello`;
+});
 
-// console.log(lis);
+console.log(lis);
 
 // document.querySelectorAll
 const items = document.querySelectorAll('ul.collection li.collection-item');
@@ -292,11 +292,11 @@ console.log(val);
 
 
 //028 Event Listeners  The Event Object
-// document.querySelector('.clear-tasks').addEventListener('click', function(e){
-//   console.log('Hello World');
+document.querySelector('.clear-tasks').addEventListener('click', function(e){
+  console.log('Hello World');
 
-//   //e.preventDefault();
-// });
+  //e.preventDefault();
+});
 
 document.querySelector('.clear-tasks').addEventListener('click', onClick);
 
@@ -337,21 +337,21 @@ const card = document.querySelector('.card');
 const heading = document.querySelector('h5');
 
 // Click
-// clearBtn.addEventListener('click', runEvent);
+clearBtn.addEventListener('click', runEvent);
 // Doubleclick
-// clearBtn.addEventListener('dblclick', runEvent);
+clearBtn.addEventListener('dblclick', runEvent);
 // Mousedown
-// clearBtn.addEventListener('mousedown', runEvent);
+clearBtn.addEventListener('mousedown', runEvent);
 // Mouseup
-// clearBtn.addEventListener('mouseup', runEvent);
+clearBtn.addEventListener('mouseup', runEvent);
 // Mouseenter
-// card.addEventListener('mouseenter', runEvent);
+card.addEventListener('mouseenter', runEvent);
 // Mouseleave
-// card.addEventListener('mouseleave', runEvent);
+card.addEventListener('mouseleave', runEvent);
 // Mouseover
-// card.addEventListener('mouseover', runEvent);
+card.addEventListener('mouseover', runEvent);
 // Mouseout
-// card.addEventListener('mouseout', runEvent);
+card.addEventListener('mouseout', runEvent);
 // Mousemove
 card.addEventListener('mousemove', runEvent);
 
@@ -377,69 +377,69 @@ taskInput.value = '';
 // form.addEventListener('submit', runEvent);
 
 // Keydown
-//taskInput.addEventListener('keydown', runEvent);
+taskInput.addEventListener('keydown', runEvent);
 // Keydown
-// taskInput.addEventListener('keyup', runEvent);
+taskInput.addEventListener('keyup', runEvent);
 // Keypress
-// taskInput.addEventListener('keypress', runEvent);
+taskInput.addEventListener('keypress', runEvent);
 // Focus
-// taskInput.addEventListener('focus', runEvent);
+taskInput.addEventListener('focus', runEvent);
 // Blur
-// taskInput.addEventListener('blur', runEvent);
+taskInput.addEventListener('blur', runEvent);
 // Cut
-// taskInput.addEventListener('cut', runEvent);
+taskInput.addEventListener('cut', runEvent);
 // Paste
-// taskInput.addEventListener('paste', runEvent);
+taskInput.addEventListener('paste', runEvent);
 // Input
-// taskInput.addEventListener('input', runEvent);
+taskInput.addEventListener('input', runEvent);
 // Change
 select.addEventListener('change', runEvent);
 
 function runEvent(e){
   console.log(`EVENT TYPE: ${e.type}`);
 
-  //console.log(e.target.value);
+  console.log(e.target.value);
 
-  // heading.innerText = e.target.value;
+  heading.innerText = e.target.value;
 
-  // Get input value
-  // console.log(taskInput.value);
+  //Get input value
+  console.log(taskInput.value);
 
-  // e.preventDefault();
+  e.preventDefault();
 }
 
 
 //031 Event Bubbling  Delegation
 // EVENT BUBBLING
 
-// document.querySelector('.card-title').addEventListener('click', function(){
-//   console.log('card title');
-// });
+document.querySelector('.card-title').addEventListener('click', function(){
+  console.log('card title');
+});
 
-// document.querySelector('.card-content').addEventListener('click', function(){
-//   console.log('card content');
-// });
+document.querySelector('.card-content').addEventListener('click', function(){
+  console.log('card content');
+});
 
-// document.querySelector('.card').addEventListener('click', function(){
-//   console.log('card');
-// });
+document.querySelector('.card').addEventListener('click', function(){
+  console.log('card');
+});
 
-// document.querySelector('.col').addEventListener('click', function(){
-//   console.log('col');
-// });
+document.querySelector('.col').addEventListener('click', function(){
+  console.log('col');
+});
 
 // EVENT DELGATION
 
-// const delItem = document.querySelector('.delete-item');
+const delItem = document.querySelector('.delete-item');
 
-// delItem.addEventListener('click', deleteItem);
+delItem.addEventListener('click', deleteItem);
 
 document.body.addEventListener('click', deleteItem);
 
 function deleteItem(e){
-  // if(e.target.parentElement.className === 'delete-item secondary-content'){
-  //   console.log('delete item');
-  // }
+  if(e.target.parentElement.className === 'delete-item secondary-content'){
+    console.log('delete item');
+  }
 
   if(e.target.parentElement.classList.contains('delete-item')){
     console.log('delete item');
@@ -450,21 +450,21 @@ function deleteItem(e){
 
 //032 Local  Session Storage
 // set local storage item
-// localStorage.setItem('name', 'John');
-// localStorage.setItem('age', '30');
+localStorage.setItem('name', 'John');
+localStorage.setItem('age', '30');
 
 // set session storage item
-// sessionStorage.setItem('name', 'Beth');
+sessionStorage.setItem('name', 'Beth');
 
 // remove from storage
-// localStorage.removeItem('name');
+localStorage.removeItem('name');
 
 // get from storage
-// const name = localStorage.getItem('name');
-// const age = localStorage.getItem('age');
+const name = localStorage.getItem('name');
+const age = localStorage.getItem('age');
 
 // // clear local storage
-// localStorage.clear();
+localStorage.clear();
 
 // console.log(name, age);
 
