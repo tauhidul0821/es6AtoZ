@@ -30,43 +30,43 @@ console.timeEnd('Hello');
 // 2.2 end
 //2.3 start
 //006 Variables - var let  const
-// var, let, const
+//var, let, const
 
 // var name = 'John Doe';
-// console.log(name);
-// name = 'Steve Smith';
-// console.log(name);
+console.log(name);
+name = 'Steve Smith';
+console.log(name);
 
 // // Init var
-// var greeting;
-// console.log(greeting);
-// greeting = 'Hello';
-// console.log(greeting);
+var greeting;
+console.log(greeting);
+greeting = 'Hello';
+console.log(greeting);
 
-// // letters, numbers, _, $
-// // Can not start with number
+// letters, numbers, _, $
+// Can not start with number
 
-// // Multi word vars
-// var firstName = 'John'; // Camel case
-// var first_name = 'Sara'; // Underscore
-// var FirstName = 'Tom'; // Pascal case
-// var firstname;
+// Multi word vars
+var firstName = 'John'; // Camel case
+var first_name = 'Sara'; // Underscore
+var FirstName = 'Tom'; // Pascal case
+var firstname;
 
 // LET
-// let name;
-// name = 'John Doe';
-// console.log(name);
-// name = 'Steve Smith';
-// console.log(name);
+let name;
+name = 'John Doe';
+console.log(name);
+name = 'Steve Smith';
+console.log(name);
 
 
 // CONST
-// const name = 'John';
-// console.log(name);
-// Can not reassign
-// name = 'Sara';
-// Have to assign a value
-// const greeting;
+const name = 'John';
+console.log(name);
+//Can not reassign
+name = 'Sara';
+//Have to assign a value
+const greeting;
 
 const person = {
     name: 'John',
@@ -145,10 +145,10 @@ val = parseInt('100.30');
 val = parseFloat('100.30');
 
 // Output
-// console.log(val);
-// console.log(typeof val);
-// //console.log(val.length);
-// console.log(val.toFixed(2));
+console.log(val);
+console.log(typeof val);
+//console.log(val.length);
+console.log(val.toFixed(2));
 
 const val1 = String(5);
 const val2 = 6;
@@ -313,36 +313,36 @@ numbers[2] = 100;
 // Find index of value
 val = numbers.indexOf(36);
 
-// MUTATING ARRAYS
-// // Add on to end
-// numbers.push(250);
-// // Add on to front
-// numbers.unshift(120);
-// // Take off from end
-// numbers.pop();
-// // Take off from front
-// numbers.shift();
-// // Splice values
-// numbers.splice(1,3);
-// // Reverse
-// numbers.reverse();
+//MUTATING ARRAYS
+// Add on to end
+numbers.push(250);
+// Add on to front
+numbers.unshift(120);
+// Take off from end
+numbers.pop();
+// Take off from front
+numbers.shift();
+// Splice values
+numbers.splice(1,3);
+// Reverse
+numbers.reverse();
 
 // Concatenate array
 val = numbers.concat(numbers2);
 
 // Sorting arrays
 val = fruit.sort();
-// val = numbers.sort();
+val = numbers.sort();
 
-// // Use the "compare function"
-// val = numbers.sort(function(x, y){
-//   return x - y;
-// });
+// Use the "compare function"
+val = numbers.sort(function(x, y){
+  return x - y;
+});
 
-// // Reverse sort
-// val = numbers.sort(function(x, y){
-//   return y - x;
-// });
+// Reverse sort
+val = numbers.sort(function(x, y){
+  return y - x;
+});
 
 // Find
 function over50(num){
@@ -440,59 +440,59 @@ console.log(birthday);
 
 const id = 100;
 
-// // EQUAL TO
-// if(id == 100){
-//   console.log('CORRECT');
-// } else {
-//   console.log('INCORRECT');
-// }
+// EQUAL TO
+if(id == 100){
+  console.log('CORRECT');
+} else {
+  console.log('INCORRECT');
+}
 
-// // NOT EQUAL TO
-// if(id != 101){
-//   console.log('CORRECT');
-// } else {
-//   console.log('INCORRECT');
-// }
+// NOT EQUAL TO
+if(id != 101){
+  console.log('CORRECT');
+} else {
+  console.log('INCORRECT');
+}
 
-// // EQUAL TO VALUE & TYPE
-// if(id === 100){
-//   console.log('CORRECT');
-// } else {
-//   console.log('INCORRECT');
-// }
+// EQUAL TO VALUE & TYPE
+if(id === 100){
+  console.log('CORRECT');
+} else {
+  console.log('INCORRECT');
+}
 
-// // EQUAL TO VALUE & TYPE
-// if(id !== 100){
-//   console.log('CORRECT');
-// } else {
-//   console.log('INCORRECT');
-// }
+// EQUAL TO VALUE & TYPE
+if(id !== 100){
+  console.log('CORRECT');
+} else {
+  console.log('INCORRECT');
+}
 
 // Test if undefined
-// if(typeof id !== 'undefined'){
-//   console.log(`The ID is ${id}`);
-// } else {
-//   console.log('NO ID');
-// }
+if(typeof id !== 'undefined'){
+  console.log(`The ID is ${id}`);
+} else {
+  console.log('NO ID');
+}
 
 // GREATER OR LESS THAN
-// if(id <= 100){
-//   console.log('CORRECT');
-// } else {
-//   console.log('INCORRECT');
-// }
+if(id <= 100){
+  console.log('CORRECT');
+} else {
+  console.log('INCORRECT');
+}
 
 // IF ELSE
 
 const color = 'yellow';
 
-// if(color === 'red'){
-//   console.log('Color is red');
-// } else if(color === 'blue'){
-//   console.log('Color is blue');
-// } else {
-//   console.log('Color is not red or blue');
-// }
+if(color === 'red'){
+  console.log('Color is red');
+} else if(color === 'blue'){
+  console.log('Color is blue');
+} else {
+  console.log('Color is not red or blue');
+}
 
 // LOGICAL OPERATORS
 
@@ -587,13 +587,13 @@ console.log(`Today is ${day}`);
 // FUNCTION DECLARATIONS
 //017 Function Declarations  Expressions
 function greet(firstName = 'John', lastName = 'Doe'){
-    // if(typeof firstName === 'undefined'){firstName = 'John'}
-    // if(typeof lastName === 'undefined'){lastName = 'Doe'}
-    //console.log('Hello');
+    if(typeof firstName === 'undefined'){firstName = 'John'}
+    if(typeof lastName === 'undefined'){lastName = 'Doe'}
+    console.log('Hello');
     return 'Hello ' + firstName + ' ' + lastName;
   }
   
-  // console.log(greet());
+  console.log(greet());
   
   // FUNCTION EXPRESIONS
   
@@ -605,13 +605,13 @@ function greet(firstName = 'John', lastName = 'Doe'){
   
   // IMMIDIATLEY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
   
-  // (function(){
-  //   console.log('IIFE Ran..');
-  // })();
+  (function(){
+    console.log('IIFE Ran..');
+  })();
   
-  // (function(name){
-  //   console.log('Hello '+ name);
-  // })('Brad');
+  (function(name){
+    console.log('Hello '+ name);
+  })('Brad');
   
   // PROPERTY METHODS
   
@@ -639,66 +639,66 @@ function greet(firstName = 'John', lastName = 'Doe'){
 //018 General Loops
   // FOR LOOP
 
-// for(let i = 0; i < 10; i++){
-//   if(i === 2){
-//     console.log('2 is my favorite number');
-//     continue;
-//   }
+for(let i = 0; i < 10; i++){
+  if(i === 2){
+    console.log('2 is my favorite number');
+    continue;
+  }
 
-//   if(i === 5){
-//     console.log('Stop the loop');
-//     break;
-//   }
+  if(i === 5){
+    console.log('Stop the loop');
+    break;
+  }
 
-//   console.log('Number '+ i);
-// }
+  console.log('Number '+ i);
+}
 
 // WHILE LOOP
 
-// let i = 0;
+let i = 0;
 
-// while(i < 10){
-//   console.log('Number ' + i);
-//   i++;
-// }
+while(i < 10){
+  console.log('Number ' + i);
+  i++;
+}
 
 // DO WHILE
 
-// let i = 100;
+let i = 100;
 
-// do {
-//   console.log('Number ' + i);
-//   i++;
-// }
+do {
+  console.log('Number ' + i);
+  i++;
+}
 
-// while(i < 10);
+while(i < 10);
 
 // LOOP THROUGH ARRAY
 const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 
-// for(let i = 0; i < cars.length; i++){
-//   console.log(cars[i]);
-// }
+for(let i = 0; i < cars.length; i++){
+  console.log(cars[i]);
+}
 
 // FOREACH
-// cars.forEach(function(car, index, array){
-//   console.log(`${index} : ${car}`);
-//   console.log(array);
-// });
+cars.forEach(function(car, index, array){
+  console.log(`${index} : ${car}`);
+  console.log(array);
+});
 
 // MAP
-// const users  = [
-//   {id: 1, name:'John'},
-//   {id: 2, name: 'Sara'},
-//   {id: 3, name: 'Karen'},
-//   {id: 4, name: 'Steve'}
-// ];
+const users  = [
+  {id: 1, name:'John'},
+  {id: 2, name: 'Sara'},
+  {id: 3, name: 'Karen'},
+  {id: 4, name: 'Steve'}
+];
 
-// const ids = users.map(function(user){
-//   return user.id;
-// });
+const ids = users.map(function(user){
+  return user.id;
+});
 
-// console.log(ids);
+console.log(ids);
 
 
 // FOR IN LOOP
@@ -721,18 +721,18 @@ for(let x in user){
 // WINDOW METHODS / OBJECTS / PROPERTIES
 
 // Alert
-//alert('Hello World');
+alert('Hello World');
 
 // Prompt
-// const input = prompt();
-// alert(input);
+const input = prompt();
+alert(input);
 
 // Confirm
-// if(confirm('Are you sure')){
-//   console.log('YES');
-// } else {
-//   console.log('NO');
-// }
+if(confirm('Are you sure')){
+  console.log('YES');
+} else {
+  console.log('NO');
+}
 
 let val;
 
@@ -756,14 +756,14 @@ val = window.location.href;
 val = window.location.search;
 
 // Redirect
-//window.location.href = 'http://google.com';
+window.location.href = 'http://google.com';
 //Reload
-//window.location.reload();
+window.location.reload();
 
 // History Object
 
-// window.history.go(-2);
-// val = window.history.length;
+window.history.go(-2);
+val = window.history.length;
 
 // Navigator Object
 val = window.navigator;
@@ -788,26 +788,26 @@ var a = 1;
 let b = 2;
 const c = 3;
 
-// function test() {
-//   var a = 4;
-//   let b = 5;
-//   const c = 6;
-//   console.log('Function Scope: ', a, b, c);
-// }
+function test() {
+  var a = 4;
+  let b = 5;
+  const c = 6;
+  console.log('Function Scope: ', a, b, c);
+}
 
-// test();
+test();
 
-// if(true) {
-//   // Block Scope
-//   var a = 4;
-//   let b = 5;
-//   const c = 6;
-//   console.log('If Scope: ', a, b, c);
-// }
+if(true) {
+  // Block Scope
+  var a = 4;
+  let b = 5;
+  const c = 6;
+  console.log('If Scope: ', a, b, c);
+}
 
-// for(var a = 0; a < 10; a++) {
-//   console.log(`Loop: ${a}`);
-// }
+for(var a = 0; a < 10; a++) {
+  console.log(`Loop: ${a}`);
+}
 
 console.log('Global Scope: ', a, b, c);
 //2.17 END
