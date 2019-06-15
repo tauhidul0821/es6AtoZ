@@ -16,3 +16,17 @@
 ### 019. A look at the Window Object 
 ### 020. Block Scope With let const 
 
+## 03.DOM Manipulation Events
+### 021. What is the DOM
+### 022. Examining The Document Object
+### 023. DOM Selectors For Single Elements
+### 024. DOM Selectors For Multiple Elements
+### 025. Traversing the DOM
+### 026. Creating Elements
+### 027. Removing Replacing Elements
+### 028. Event Listeners The Event Object 
+### 029. Mouse Events
+### 030. Keyboard Input Events
+### 031. Event Bubbling Delegation
+### 032. Local Session Storage
+
