@@ -1,6 +1,7 @@
 # es6AtoZ
 ## 02.JavaScript Language Fundamentals
 ### 006. Variables - var let const 
+![Screenshot (12)](https://user-images.githubusercontent.com/10520882/60235057-4a5cfd00-98c8-11e9-84af-dd4aeb350fba.png)
 ### 007. Data type in javaScript 
 ### 008. Type Conversion
 ### 009. Numbers The Math Object
